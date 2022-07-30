@@ -12,6 +12,9 @@ func handlerFunc(w http.ResponseWriter, r *http.Request) {
 			"href=\"mailto:traianlupanciuc@gmail.com\">traianlupanciuc@gmail.com</a>")
 	} else if r.URL.Path == "/" {
 		fmt.Fprintf(w, "<h1>This is a title Page</h1>")
+	} else {
+		w.WriteHeader(http.StatusNotFound)
+		fmt.Fprint(w, "<h1>The Page you are looking for does not exist :(</h1>")
 	}
 }
 
