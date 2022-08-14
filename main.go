@@ -8,7 +8,7 @@ import (
 
 func home(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Content-Type", "text/html")
-	fmt.Fprint(w, "<h1>The Page you are looking for does not exist :(</h1>")
+	fmt.Fprint(w, "<h1>Welcome to the THE.</h1>")
 }
 
 func contact(w http.ResponseWriter, r *http.Request) {
