@@ -60,5 +60,3 @@ builds/**/images/*
 # Ignore the following ones as well
 main
 tmp
-go.mod
-go.sum
